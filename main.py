@@ -9,17 +9,18 @@ token = os.getenv("DISCORD_BOT_TOKEN")
 async def on_ready():
  print('Bot is ready')
 
-hi = "Hi son"
-weather = "How is the weather"
+test = "Hi son"
+
+weathertest = "How is the weather"
 
 @client.event
 async def on_message(message):
-    if message.content == hi:
+    if message.content == test:
         await message.channel.send('hello daddy :smile:')
 
 @client.event
 async def on_message(message):
-    if message.content == weather:
+    if message.content == weathertest:
         await message.channel.send('Weather is Good')
 
 @client.event
