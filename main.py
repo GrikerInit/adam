@@ -11,8 +11,6 @@ async def on_ready():
 
 hi = "Hi son"
 weather = "How is the weather"
-hi1 = "hi son"
-weather2 = "how is the weather"
 
 @client.event
 async def on_message(message):
@@ -26,12 +24,7 @@ async def on_message(message):
 
 @client.event
 async def on_message(message):
-    if message.content == hi1:
-        await message.channel.send('hello daddy :smile:')
-
-@client.event
-async def on_message(message):
-    if message.content == weather2:
-        await message.channel.send('Weather is Good')
+    if message.content == "test":
+        await message.channel.send('I work now')
 
 client.run(token)
