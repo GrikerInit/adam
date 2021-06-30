@@ -14,7 +14,7 @@ async def on_message(message):
     if message.content == "Hi son":
         await message.channel.send('Hi daddy :smile:')
     if message.content == "How is the weather":
-        await message.channel.send("The Weather is good today")
+        await message.channel.send("The weather is good today")
     
         
 client.run(token)
